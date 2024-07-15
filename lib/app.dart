@@ -11,6 +11,11 @@ class App extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: GAppTheme.lightTheme,
       darkTheme: GAppTheme.darkTheme,
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Bitch Please, Nerver give up'),
+        ),
+      ),
     );
   }
 }
