@@ -1,0 +1,114 @@
+1. Pantalla de Inicio
+Botones:
+Registro: Lleva a la pantalla de registro.
+Inicio de Sesión: Lleva a la pantalla de inicio de sesión.
+
+
+2. Pantalla de Inicio de Sesión
+Campos:
+Nombre de usuario o correo electrónico
+Contraseña
+Botones:
+Iniciar Sesión: Verifica las credenciales y lleva a la pantalla principal.
+Volver: Regresa a la pantalla de inicio.
+¿Olvidó su contraseña?: Lleva a la pantalla de recuperación de contraseña.
+
+
+3. Pantalla de Registro
+Campos:
+Nombre de usuario
+Correo electrónico
+Contraseña
+Confirmar Contraseña
+Botones:
+Registrarse: Completa el proceso de registro y lleva a la pantalla de inicio de sesión.
+Volver: Regresa a la pantalla de inicio.
+
+
+4. Pantalla Principal (Cliente)
+Secciones:
+Buscar Negocios
+Campo de Búsqueda: Buscar negocios por nombre o categoría.
+Lista de Negocios: Muestra los negocios disponibles con opciones de filtrado (por categoría, proximidad, etc.)
+Mis Citas y Turnos
+Lista de Citas/Turnos Programados: Muestra las citas y turnos programados del cliente.
+Perfil
+Detalles del Usuario: Ver y editar perfil del cliente.
+Botones:
+Reservar: Lleva a la pantalla de selección de negocio.
+Notificaciones: Accede a las notificaciones.
+Perfil: Accede a la sección de perfil.
+
+
+5. Pantalla de Selección de Negocio
+Secciones:
+Lista de Negocios: Muestra una lista de negocios con detalles básicos (nombre, categoría, distancia).
+Filtros de Búsqueda: Permite filtrar por categoría, distancia, etc.
+Botones:
+Ver Detalles: Lleva a la pantalla de detalles del negocio seleccionado.
+Reservar Cita/Turno: Lleva a la pantalla de selección de servicios.
+
+
+6. Pantalla de Detalles del Negocio
+Secciones:
+Información del Negocio: Nombre, dirección, contacto, horario de atención.
+Servicios Ofrecidos: Lista de servicios que ofrece el negocio.
+Reseñas: Comentarios y calificaciones de otros usuarios.
+Botones:
+Reservar: Lleva a la pantalla de selección de servicios.
+
+
+7. Pantalla de Selección de Servicios
+Secciones:
+Lista de Servicios: Descripción y precio de cada servicio.
+Opciones de Citas y Turnos
+Cita: Permite seleccionar una hora específica.
+Turno: Asigna el próximo espacio disponible.
+Botones:
+Continuar: Lleva a la pantalla de confirmación de reserva.
+
+
+8. Pantalla de Confirmación de Reserva
+Secciones:
+Detalles de la Reserva: Resumen del servicio, negocio, fecha y hora.
+Opciones de Notificación: Configurar recordatorios.
+Botones:
+Confirmar: Confirma la reserva.
+Cancelar: Cancela la operación y regresa a la pantalla anterior.
+
+
+9. Pantalla de Perfil del Cliente
+Secciones:
+Información Personal: Nombre, correo, teléfono, etc.
+Historial de Reservas: Lista de todas las citas y turnos pasados.
+Configuración de Notificaciones
+Botones:
+Editar Perfil: Permite editar la información personal.
+Cerrar Sesión: Cierra la sesión del usuario.
+
+
+10. Pantalla Principal (Proveedor)
+  Secciones:
+Calendario de Citas y Turnos
+Vista Semanal/Mensual: Muestra las citas y turnos programados.
+Gestionar Servicios
+Lista de Servicios: Añadir, editar o eliminar servicios.
+Configuración de Negocio
+Horario de Atención: Configurar horarios disponibles.
+Detalles del Negocio: Editar información del negocio.
+Botones:
+Agregar Cita/Turno: Permite agregar una nueva cita o turno.
+Cancelar Cita/Turno: Permite cancelar una cita o turno existente.
+Atender/Cancelar Turno: Permite marcar un turno como atendido o cancelado.
+Pausar Turnos/Citas: Permite pausar la toma de nuevos turnos o citas.
+
+
+11. Pantalla de Configuración de Negocio
+Secciones:
+Información Básica: Nombre, dirección, contacto.
+Horario de Atención: Configurar horarios de atención.
+Servicios Ofrecidos: Añadir, editar o eliminar servicios.
+Políticas de Cancelación: Configurar tiempos de margen para cancelaciones automáticas.
+Botones:
+Guardar: Guarda los cambios realizados.
+Cancelar: Cancela los cambios y regresa a la pantalla principal del proveedor.
