@@ -13,9 +13,15 @@ class App extends StatelessWidget {
       theme: GAppTheme.lightTheme,
       darkTheme: GAppTheme.darkTheme,
       home: Scaffold(
-        backgroundColor: GColors.primary,
+        backgroundColor: GColors.primaryGreen,
         appBar: AppBar(
-          title: Text('Bitch Please, Nerver give up'),
+          title: Text(
+            'Bitch Please, Nerver give up',
+            style: TextStyle(
+                fontFamily: 'Poppins',
+                fontSize: 25,
+                fontWeight: FontWeight.w300),
+          ),
         ),
       ),
     );
