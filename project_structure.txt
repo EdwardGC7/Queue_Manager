@@ -1,10 +1,11 @@
+//Alex
 1. Pantalla de Inicio
 Botones:
 Registro: Lleva a la pantalla de registro.
 Inicio de Sesión: Lleva a la pantalla de inicio de sesión.
 
 
-//Osvaldo
+//Osvaldo [completed (no database yet)]
 2. Pantalla de Inicio de Sesión
 Campos:
 Nombre de usuario o correo electrónico
@@ -14,13 +15,13 @@ Iniciar Sesión: Verifica las credenciales y lleva a la pantalla principal.
 Volver: Regresa a la pantalla de inicio.
 ¿Olvidó su contraseña?: Lleva a la pantalla de recuperación de contraseña.
 
-
+//Osvaldo
 3. Pantalla de Registro
 Campos:
 Nombre de usuario
 Correo electrónico
 Contraseña
-Confirmar Contraseña
+Numero de telefono
 Botones:
 Registrarse: Completa el proceso de registro y lleva a la pantalla de inicio de sesión.
 Volver: Regresa a la pantalla de inicio.
