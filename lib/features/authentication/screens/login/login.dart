@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:queue_manager/common/form_divider.dart';
 import 'package:queue_manager/common/social_buttons.dart';
 import 'package:queue_manager/features/authentication/screens/login/widgets/login_form.dart';
 import 'package:queue_manager/features/authentication/screens/login/widgets/login_header.dart';
@@ -31,31 +32,7 @@ class LoginScreen extends StatelessWidget {
               const GLoginForm(),
 
               //Divider
-              // GFormDivider(dividerText: GTexts.orSignInWith.capitalize!),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Flexible(
-                      child: Divider(
-                    color: dark ? GColors.darkGrey : GColors.grey,
-                    thickness: 0.5,
-                    indent: 60.0,
-                    endIndent: 5.0,
-                  )),
-                  Text(
-                    GTexts.orSignInWith.capitalize!,
-                    style: Theme.of(context).textTheme.labelMedium,
-                  ),
-                  Flexible(
-                    child: Divider(
-                      color: dark ? GColors.darkGrey : GColors.grey,
-                      thickness: 0.5,
-                      indent: 5.0,
-                      endIndent: 60.0,
-                    ),
-                  )
-                ],
-              ),
+              GFormDivider(dividerText: GTexts.orSignInWith.capitalize!),
 
               const SizedBox(
                 height: GSizes.spaceBtwItems,

@@ -14,6 +14,16 @@ class GTexts {
   static const String createAccount = "Crear una cuenta";
   static const String guessAccess = "Continuar Como Invitado";
   static const String inicioTitle = "Bienvenido";
+  static const String signupTitle = "Vamos a crear tu cuenta";
+  static const String orSignUpWith = "O inicia sesión con";
+  static const String iAgreeTo = "Acepto...";
+  static const String privacyPolicy = "Políticas de privacidad";
+  static const String termsOfUse = "Terminos de uso";
+  static const String and = "y";
+  static const String firstName = "Nombre";
+  static const String lastName = "Apellidos";
+  static const String username = "Nombre de usuario";
+  static const String phoneNo = "Teléfono";
 
   // static const String and = "and";
 }
