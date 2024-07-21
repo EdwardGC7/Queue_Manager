@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:queue_manager/common/social_buttons.dart';
 import 'package:queue_manager/features/authentication/screens/login/login.dart';
+import 'package:queue_manager/routes/routes.dart';
 import 'package:queue_manager/utils/constants/sizes.dart';
 import 'package:queue_manager/utils/constants/text_strings.dart';
 
@@ -29,13 +30,14 @@ class _InicioState extends State<Inicio> {
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const LoginScreen()),
-                        );
-                      },
+                      // onPressed: () {
+                      onPressed: () => Get.toNamed(Routes.LOGINSCREEN),
+                      //   Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(
+                      //         builder: (context) => const LoginScreen()),
+                      //   );
+                      // },
                       child: Text(GTexts.signIn)),
                 ),
               ],
