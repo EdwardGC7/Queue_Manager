@@ -10,7 +10,7 @@ class GTexts {
   static const String password = "Contraseña";
   static const String rememberMe = "Recuerdame";
   static const String forgetPassword = "Olvidó la contraseña?";
-  static const String signIn = "Registrarse";
+  static const String signIn = "Ingresar";
   static const String createAccount = "Crear una cuenta";
 
   // static const String and = "and";
