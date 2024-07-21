@@ -4,6 +4,7 @@ Registro: Lleva a la pantalla de registro.
 Inicio de Sesión: Lleva a la pantalla de inicio de sesión.
 
 
+//Osvaldo
 2. Pantalla de Inicio de Sesión
 Campos:
 Nombre de usuario o correo electrónico
