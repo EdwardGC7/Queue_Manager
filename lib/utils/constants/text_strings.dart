@@ -12,6 +12,8 @@ class GTexts {
   static const String forgetPassword = "Olvidó la contraseña?";
   static const String signIn = "Ingresar";
   static const String createAccount = "Crear una cuenta";
+  static const String guessAccess = "Continuar Como Invitado";
+  static const String inicioTitle = "Bienvenido";
 
   // static const String and = "and";
 }
