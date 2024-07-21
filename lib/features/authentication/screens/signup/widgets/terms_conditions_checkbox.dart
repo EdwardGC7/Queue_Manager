@@ -20,27 +20,37 @@ class _GTermsAndConditionCheckboxState
   Widget build(BuildContext context) {
     final dark = GHelperFunctions.isDarkMode(context);
 
-    return Row(
+    return Wrap(
+      spacing: 8.0, // espacio entre los elementos en la misma línea
+      runSpacing: 8.0, // espacio entre las líneas
+      crossAxisAlignment: WrapCrossAlignment.center,
       children: [
         SizedBox(
-          width: 24,
-          height: 24,
-          child: Checkbox(
-            value: _privacyPolicy,
-            onChanged: (value) {
-              setState(() {
-                _privacyPolicy = value!;
-              });
-            },
+          child: Row(
+            children: [
+              SizedBox(
+                width: 24,
+                height: 24,
+                child: Checkbox(
+                  value: _privacyPolicy,
+                  onChanged: (value) {
+                    setState(() {
+                      _privacyPolicy = value!;
+                    });
+                  },
+                ),
+              ),
+              const SizedBox(width: GSizes.spaceBtwItems / 2),
+              Text.rich(TextSpan(
+                text: '${GTexts.iAgreeTo} ',
+                style: Theme.of(context).textTheme.bodySmall,
+              )),
+            ],
           ),
         ),
         const SizedBox(width: GSizes.spaceBtwItems / 2),
         Text.rich(
           TextSpan(children: [
-            TextSpan(
-              text: '${GTexts.iAgreeTo} ',
-              style: Theme.of(context).textTheme.bodySmall,
-            ),
             TextSpan(
               text: '${GTexts.privacyPolicy} ',
               style: Theme.of(context).textTheme.bodyMedium!.apply(

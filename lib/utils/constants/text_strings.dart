@@ -16,7 +16,7 @@ class GTexts {
   static const String inicioTitle = "Bienvenido";
   static const String signupTitle = "Vamos a crear tu cuenta";
   static const String orSignUpWith = "O inicia sesión con";
-  static const String iAgreeTo = "Acepto...";
+  static const String iAgreeTo = "Acepto";
   static const String privacyPolicy = "Políticas de privacidad";
   static const String termsOfUse = "Terminos de uso";
   static const String and = "y";
@@ -24,6 +24,9 @@ class GTexts {
   static const String lastName = "Apellidos";
   static const String username = "Nombre de usuario";
   static const String phoneNo = "Teléfono";
+  static const String client = "Cliente";
+  static const String business = "Empresa";
+  static const String acountTipe = "Elige el tipo de cuenta que deseas usar";
 
   // static const String and = "and";
 }
