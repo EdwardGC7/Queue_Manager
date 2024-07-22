@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:queue_manager/features/authentication/screens/login/login.dart';
-import 'package:queue_manager/features/authentication/screens/login/widgets/Inicio.dart';
+import 'package:queue_manager/features/authentication/screens/inicio/Inicio.dart';
 import 'package:queue_manager/routes/routes.dart';
 import 'package:queue_manager/utils/constants/colors.dart';
 import 'package:queue_manager/utils/theme/theme.dart';

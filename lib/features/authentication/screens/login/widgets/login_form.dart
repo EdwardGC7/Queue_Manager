@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 // import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:queue_manager/features/authentication/widgets/create_acount.dart';
 import 'package:queue_manager/routes/routes.dart';
 
 import '../../../../../utils/constants/sizes.dart';
@@ -118,13 +119,7 @@ class _GLoginFormState extends State<GLoginForm> {
             const SizedBox(height: GSizes.spaceBtwItems),
 
             /// Create Account Button
-            SizedBox(
-              width: double.infinity,
-              child: OutlinedButton(
-                onPressed: () {},
-                child: const Text(GTexts.createAccount),
-              ),
-            ),
+            const CreateAcountButton(),
           ],
         ),
       ),

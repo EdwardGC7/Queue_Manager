@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:queue_manager/common/social_buttons.dart';
 import 'package:queue_manager/features/authentication/screens/login/login.dart';
+import 'package:queue_manager/features/authentication/widgets/create_acount.dart';
 import 'package:queue_manager/utils/constants/colors.dart';
 import 'package:queue_manager/utils/constants/sizes.dart';
 import 'package:queue_manager/utils/constants/text_strings.dart';
@@ -66,13 +67,7 @@ class _InicioState extends State<Inicio> {
                         child: const Text(GTexts.signIn)),
                   ),
                   const SizedBox(height: GSizes.spaceBtwItems),
-                  SizedBox(
-                    width: double.infinity,
-                    child: OutlinedButton(
-                      onPressed: () {},
-                      child: const Text(GTexts.createAccount),
-                    ),
-                  ),
+                  const CreateAcountButton(),
                   const SizedBox(height: GSizes.spaceBtwItems),
                   SizedBox(
                     width: double.infinity,
