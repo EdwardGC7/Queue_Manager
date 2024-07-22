@@ -27,6 +27,10 @@ class GTexts {
   static const String client = "Cliente";
   static const String business = "Empresa";
   static const String acountTipe = "Elige el tipo de cuenta que deseas usar";
+  static const String recuperar = "Recuperar";
+  static const String tituloOlvideContrasena = "olvide mi contraeña";
+  static const String introEmailSub =
+      "Introdusca su email para recuperar la contraseña";
 
   // static const String and = "and";
 }
