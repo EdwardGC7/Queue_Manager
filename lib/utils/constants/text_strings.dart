@@ -31,6 +31,8 @@ class GTexts {
   static const String tituloOlvideContrasena = "olvide mi contraeña";
   static const String introEmailSub =
       "Introdusca su email para recuperar la contraseña";
+  static const String correoRecuperacion =
+      "Se ha enviado un correo de recuperacion";
 
   // static const String and = "and";
 }

@@ -1,8 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:queue_manager/features/authentication/widgets/create_acount.dart';
+import 'package:queue_manager/routes/routes.dart';
 import 'package:queue_manager/utils/constants/colors.dart';
 import 'package:queue_manager/utils/constants/sizes.dart';
 import 'package:queue_manager/utils/constants/text_strings.dart';
@@ -79,7 +82,11 @@ class _OlvideContrasenaState extends State<OlvideContrasena> {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  showDialog(
+                      context: context,
+                      builder: (context) => const ModalRecuperar());
+                },
                 child: const Text(GTexts.recuperar),
               ),
             ),
@@ -87,5 +94,53 @@ class _OlvideContrasenaState extends State<OlvideContrasena> {
         ),
       ),
     );
+  }
+}
+
+class ModalRecuperar extends StatelessWidget {
+  const ModalRecuperar({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return CupertinoAlertDialog(
+      title: const Icon(
+        Icons.info_rounded,
+        size: 50,
+        color: GColors.primaryGreen,
+      ),
+      content: const Text(
+        GTexts.correoRecuperacion,
+        style: TextStyle(
+            fontSize: 20,
+            fontFamily: AutofillHints.birthday,
+            fontWeight: FontWeight.w400),
+      ),
+      actions: [
+        MaterialButton(
+          onPressed: () => Get.toNamed(Routes.LOGINSCREEN),
+          child: Text(
+            'Iniciar Sesion',
+            style: TextStyle(fontSize: 15),
+          ),
+        )
+      ],
+    );
+    // Dialog(
+    //   child: Container(
+    //     padding: const EdgeInsets.only(
+    //       top: 75,
+    //     ),
+    //     width: 200,
+    //     height: 200,
+    //     child: const Text(
+    //       GTexts.correoRecuperacion,
+    //       style: TextStyle(
+    //           fontSize: 20,
+    //           fontFamily: AutofillHints.birthday,
+    //           fontWeight: FontWeight.w400),
+    //       textAlign: TextAlign.center,
+    //     ),
+    //   ),
+    // );
   }
 }
