@@ -26,7 +26,7 @@ class _InicioState extends State<Inicio> {
               decoration: const BoxDecoration(
                 color: GColors.primaryGreen,
                 borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.elliptical(800, 800),
+                  bottomRight: Radius.circular(100),
                 ),
               ),
               child: const Center(

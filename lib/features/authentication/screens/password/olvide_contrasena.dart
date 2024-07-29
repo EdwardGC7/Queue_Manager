@@ -43,14 +43,30 @@ class _OlvideContrasenaState extends State<OlvideContrasena> {
               children: [
                 Container(
                   decoration: BoxDecoration(
+                    boxShadow: const [
+                      BoxShadow(
+                        color: GColors.primaryGreen,
+                        offset: Offset(0.0, 1.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 0,
+                      )
+                    ],
                     borderRadius: BorderRadius.circular(100),
-                    color: GColors.shadowGreen,
+                    //color: GColors.shadowGreen,
                   ),
                   width: 200,
                   height: 200,
                 ),
                 Container(
                   decoration: BoxDecoration(
+                    boxShadow: const [
+                      BoxShadow(
+                        color: GColors.white,
+                        offset: Offset(0.0, -5.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      ),
+                    ],
                     borderRadius: BorderRadius.circular(100),
                     color: GColors.primaryGreen,
                   ),
@@ -98,7 +114,7 @@ class _OlvideContrasenaState extends State<OlvideContrasena> {
 }
 
 class ModalRecuperar extends StatelessWidget {
-  const ModalRecuperar({Key? key}) : super(key: key);
+  const ModalRecuperar({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -118,7 +134,7 @@ class ModalRecuperar extends StatelessWidget {
       actions: [
         MaterialButton(
           onPressed: () => Get.toNamed(Routes.LOGINSCREEN),
-          child: Text(
+          child: const Text(
             'Iniciar Sesion',
             style: TextStyle(fontSize: 15),
           ),
