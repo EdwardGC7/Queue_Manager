@@ -2,6 +2,7 @@
 
 class GTexts {
   // -- GLOBAL Texts
+  static const String gContinue = "Continuar";
   static const String orSignInWith = 'o inicia sesion con';
   static const String loginTitle = "Bienvenido de vuelta";
   static const String loginSubTitle =
@@ -33,6 +34,10 @@ class GTexts {
       "Introdusca su email para recuperar la contraseña";
   static const String correoRecuperacion =
       "Se ha enviado un correo de recuperacion";
+  static const String confirmarEmail = "Verifique su dirección de corréo!";
+  static const String confirmarEmailSubTitle =
+      "Felicitaciones! Tu cuenta te espera.";
+  static const String resendEmail = "Reenviar Email";
 
   // static const String and = "and";
 }

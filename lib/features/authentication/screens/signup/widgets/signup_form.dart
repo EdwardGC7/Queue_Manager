@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:queue_manager/routes/routes.dart';
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/text_strings.dart';
 import '../../../../../utils/validators/validation.dart';
@@ -36,9 +38,10 @@ class _GSignupFormState extends State<GSignupForm> {
   }
 
   void _signup() {
-    if (_signupFormKey.currentState!.validate()) {
-      // Implement signup logic here
-    }
+    Get.toNamed(Routes.CONFIRMAREMAIL);
+    // if (_signupFormKey.currentState!.validate()) {
+    //   // Implement signup logic here
+    // }
   }
 
   @override
