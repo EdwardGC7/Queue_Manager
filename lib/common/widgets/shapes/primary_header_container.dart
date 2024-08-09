@@ -15,10 +15,10 @@ class GPrimaryHeaderContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return GCurvedEdgesWidget(
       child: Container(
-        color: GColors.primary,
+        color: GColors.primaryGreen,
         padding: const EdgeInsets.all(0),
         child: Container(
-          color: GColors.primary,
+          color: GColors.primaryGreen,
           child: Stack(
             children: [
               Positioned(

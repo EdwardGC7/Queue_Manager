@@ -2,11 +2,13 @@
 
 class GTexts {
   // -- GLOBAL Texts
+  static const String appName = "App de turnos y citas";
+  static const String appbarSlogan = "Toma control de tu tiempo";
+  static const String loginSubTitle =
+      "Toma control de tu tiempo y reduce la espera";
   static const String gContinue = "Continuar";
   static const String orSignInWith = 'o inicia sesion con';
   static const String loginTitle = "Bienvenido de vuelta";
-  static const String loginSubTitle =
-      "Toma control de tu tiempo y reduce la espera";
   static const String email = "E-Mail";
   static const String password = "Contraseña";
   static const String rememberMe = "Recuerdame";

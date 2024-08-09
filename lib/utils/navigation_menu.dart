@@ -25,11 +25,12 @@ class NavigationMenu extends StatelessWidget {
                 ? GColors.white.withOpacity(0.1)
                 : Colors.black.withOpacity(0.1),
             destinations: const [
-              NavigationDestination(icon: Icon(Iconsax.home), label: 'Home'),
-              NavigationDestination(icon: Icon(Iconsax.shop), label: 'Store'),
+              NavigationDestination(icon: Icon(Iconsax.home), label: 'Inicio'),
               NavigationDestination(
-                  icon: Icon(Iconsax.heart), label: 'WishList'),
-              NavigationDestination(icon: Icon(Iconsax.user), label: 'Profile'),
+                  icon: Icon(Iconsax.calendar_2), label: 'Mis citas'),
+              NavigationDestination(
+                  icon: Icon(Iconsax.heart), label: 'Favoritos'),
+              NavigationDestination(icon: Icon(Iconsax.user), label: 'Perfil'),
             ]),
       ),
       body: Obx(() => controller.screens[controller.selectedIndex.value]),
