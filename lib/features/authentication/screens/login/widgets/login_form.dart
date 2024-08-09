@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:queue_manager/features/authentication/widgets/create_acount.dart';
 import 'package:queue_manager/routes/routes.dart';
+import 'package:queue_manager/utils/navigation_menu.dart';
 
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/text_strings.dart';
@@ -43,6 +44,7 @@ class _GLoginFormState extends State<GLoginForm> {
   }
 
   void _signIn() {
+    Get.to(() => NavigationMenu());
     if (_formKey.currentState?.validate() ?? false) {
       // Handle sign in logic here
     }
