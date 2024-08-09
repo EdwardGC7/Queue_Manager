@@ -3,13 +3,11 @@ import 'package:queue_manager/common/widgets/shapes/search_container.dart';
 import 'package:queue_manager/common/widgets/texts/section_heading.dart';
 import 'package:queue_manager/features/queue_app/screens/home/widgets/header_categories.dart';
 import 'package:queue_manager/features/queue_app/screens/home/widgets/home_appbar.dart';
+import 'package:queue_manager/features/queue_app/screens/home/widgets/promo_slider.dart';
 // import 'package:queue_manager/features/shop/screens/home/widgets/promo_slider.dart';
 import 'package:queue_manager/utils/constants/colors.dart';
-import 'package:queue_manager/utils/constants/image_strings.dart';
 import 'package:queue_manager/utils/constants/sizes.dart';
-import 'package:queue_manager/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -73,7 +71,7 @@ class _HomeScreenState extends State<HomeScreen> {
               padding: EdgeInsets.all(GSizes.defaultSpace),
               child: Column(
                 children: [
-                  // const GPromoSlider(),
+                  const GPromoSlider(),
                   SizedBox(height: GSizes.spaceBtwSections),
 
                   /// -- Encabezado
