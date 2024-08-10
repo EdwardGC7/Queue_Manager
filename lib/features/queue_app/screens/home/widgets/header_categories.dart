@@ -7,8 +7,6 @@ class GHeaderCategories extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // final categoryController = Get.put(CategoryController());
-
     final List<Map<String, String>> category = [
       {
         'name': 'Salón',

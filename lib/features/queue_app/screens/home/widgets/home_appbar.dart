@@ -11,7 +11,6 @@ class GHomeAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // final userController = Get.put(UserController());
     return GAppBar(
       title: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

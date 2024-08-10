@@ -21,7 +21,7 @@ class GNegocioCardVertical extends StatelessWidget {
         width: 180,
         padding: const EdgeInsets.all(1),
         decoration: BoxDecoration(
-          boxShadow: [GShadowStyle.verticalProductShadow],
+          boxShadow: [GShadowStyle.verticalCardShadow],
           borderRadius: BorderRadius.circular(GSizes.productImageRadius),
           color: dark ? GColors.darkerGrey : GColors.white,
         ),
