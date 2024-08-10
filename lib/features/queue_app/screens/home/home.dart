@@ -1,13 +1,15 @@
+import 'package:queue_manager/common/widgets/layouts/grid_layout.dart';
 import 'package:queue_manager/common/widgets/shapes/primary_header_container.dart';
 import 'package:queue_manager/common/widgets/shapes/search_container.dart';
 import 'package:queue_manager/common/widgets/texts/section_heading.dart';
 import 'package:queue_manager/features/queue_app/screens/home/widgets/header_categories.dart';
 import 'package:queue_manager/features/queue_app/screens/home/widgets/home_appbar.dart';
+import 'package:queue_manager/features/queue_app/screens/home/widgets/negocio_card_vertical.dart';
 import 'package:queue_manager/features/queue_app/screens/home/widgets/promo_slider.dart';
-// import 'package:queue_manager/features/shop/screens/home/widgets/promo_slider.dart';
 import 'package:queue_manager/utils/constants/colors.dart';
 import 'package:queue_manager/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:queue_manager/utils/constants/text_strings.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -30,8 +32,8 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
-          children: const [
-            GPrimaryHeaderContainer(
+          children: [
+            const GPrimaryHeaderContainer(
               child: Column(
                 children: [
                   GHomeAppBar(),
@@ -49,7 +51,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     child: Column(
                       children: [
                         GSectionHeading(
-                            title: 'Popular Categories',
+                            title: GTexts.categoriasHeadingInicio,
                             textColor: GColors.white,
                             showActionButton: false),
                         SizedBox(height: GSizes.spaceBtwItems),
@@ -68,17 +70,22 @@ class _HomeScreenState extends State<HomeScreen> {
 
             /// body
             Padding(
-              padding: EdgeInsets.all(GSizes.defaultSpace),
+              padding: const EdgeInsets.all(GSizes.defaultSpace),
               child: Column(
                 children: [
                   const GPromoSlider(),
-                  SizedBox(height: GSizes.spaceBtwSections),
+                  const SizedBox(height: GSizes.spaceBtwSections),
 
                   /// -- Encabezado
-                  // GSectionHeading(title: 'Popular Products', onPressed: () {}),
-                  SizedBox(height: GSizes.spaceBtwSections),
+                  GSectionHeading(
+                      title: GTexts.sectionHeadingInicio, onPressed: () {}),
+                  const SizedBox(height: GSizes.spaceBtwSections),
 
-                  /// Sección de Productos
+                  /// Sección de Negocios
+                  GGridLayout(
+                    itemCount: 7,
+                    itemBuilder: (_, index) => GNegocioCardVertical(),
+                  )
                 ],
               ),
             )

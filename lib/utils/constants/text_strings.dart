@@ -40,6 +40,8 @@ class GTexts {
   static const String confirmarEmailSubTitle =
       "Felicitaciones! Tu cuenta te espera.";
   static const String resendEmail = "Reenviar Email";
+  static const String sectionHeadingInicio = "Lugares Populares";
+  static const String categoriasHeadingInicio = "Categorias Populares";
 
   // static const String and = "and";
 }
