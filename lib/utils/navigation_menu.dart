@@ -1,3 +1,4 @@
+import 'package:queue_manager/features/authentication/screens/citas/mis_citas.dart';
 import 'package:queue_manager/features/queue_app/screens/home/home.dart';
 import 'package:queue_manager/utils/constants/colors.dart';
 import 'package:queue_manager/utils/helpers/helper_functions.dart';
@@ -43,9 +44,7 @@ class NavigationController extends GetxController {
 
   final screens = [
     const HomeScreen(),
-    Container(
-      color: Colors.green,
-    ),
+    const MisCitas(),
     Container(
       color: Colors.purple,
     ),
