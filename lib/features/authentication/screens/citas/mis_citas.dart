@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:queue_manager/utils/constants/colors.dart';
 
 class MisCitas extends StatefulWidget {
@@ -21,24 +22,39 @@ class _MisCitasState extends State<MisCitas> {
         centerTitle: true,
         backgroundColor: GColors.primaryGreen,
       ),
-      body: ListView.builder(
-        shrinkWrap: true,
-        itemCount: 20,
-        itemBuilder: (_, index) {
-          return const Card(
-            shadowColor: GColors.primaryGreen,
-            elevation: 100,
-            child: ListTile(
-              title: Text(
-                "Jon Barbershop",
-                style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: ListView.builder(
+          shrinkWrap: true,
+          itemCount: 20,
+          itemBuilder: (_, index) {
+            return Card(
+              color: Colors.white70,
+              shape: const RoundedRectangleBorder(
+                  borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(30),
+                    topRight: Radius.circular(30),
+                  ),
+                  side: BorderSide(
+                    width: 1,
+                    color: GColors.primaryGreen,
+                  )),
+              child: ListTile(
+                title: const Text(
+                  "Jon Barbershop",
+                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                ),
+                subtitle: Text("nota"),
+                trailing: IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.delete),
+                  color: Colors.red,
+                ),
+                leading: Text("4"),
               ),
-              subtitle: Text("nota"),
-              trailing: Text("09:30 AM"),
-              leading: Text("4"),
-            ),
-          );
-        },
+            );
+          },
+        ),
       ),
     );
   }
