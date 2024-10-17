@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:queue_manager/utils/constants/colors.dart';
+import 'package:queue_manager/utils/constants/sizes.dart';
 
 class MisCitas extends StatefulWidget {
   const MisCitas({super.key});
@@ -21,40 +22,48 @@ class _MisCitasState extends State<MisCitas> {
         ),
         centerTitle: true,
         backgroundColor: GColors.primaryGreen,
+        shadowColor: Colors.black,
+        elevation: 10,
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: ListView.builder(
-          shrinkWrap: true,
-          itemCount: 20,
-          itemBuilder: (_, index) {
-            return Card(
-              color: Colors.white70,
-              shape: const RoundedRectangleBorder(
-                  borderRadius: BorderRadius.only(
-                    bottomLeft: Radius.circular(30),
-                    topRight: Radius.circular(30),
-                  ),
-                  side: BorderSide(
-                    width: 1,
-                    color: GColors.primaryGreen,
-                  )),
-              child: ListTile(
-                title: const Text(
-                  "Jon Barbershop",
-                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-                ),
-                subtitle: Text("nota"),
-                trailing: IconButton(
-                  onPressed: () {},
-                  icon: Icon(Icons.delete),
-                  color: Colors.red,
-                ),
-                leading: Text("4"),
+      backgroundColor: Colors.grey[200],
+      body: Column(
+        children: [
+          const SizedBox(height: GSizes.lg),
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ListView.builder(
+                shrinkWrap: true,
+                itemCount: 20,
+                itemBuilder: (_, index) {
+                  return Card(
+                    color: Colors.white,
+                    shape: const RoundedRectangleBorder(
+                      borderRadius: BorderRadius.only(
+                        bottomLeft: Radius.circular(30),
+                        //topRight: Radius.circular(30),
+                      ),
+                    ),
+                    child: ListTile(
+                      title: const Text(
+                        "Jon Barbershop",
+                        style: TextStyle(
+                            fontSize: 15, fontWeight: FontWeight.bold),
+                      ),
+                      subtitle: Text("nota"),
+                      trailing: IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.delete),
+                        color: Colors.red,
+                      ),
+                      leading: Text("4"),
+                    ),
+                  );
+                },
               ),
-            );
-          },
-        ),
+            ),
+          ),
+        ],
       ),
     );
   }
