@@ -46,17 +46,17 @@ class _MisCitasState extends State<MisCitas> {
                     ),
                     child: ListTile(
                       title: const Text(
-                        "Jon Barbershop",
+                        "Jon Jones Barbershop",
                         style: TextStyle(
                             fontSize: 15, fontWeight: FontWeight.bold),
                       ),
-                      subtitle: Text("nota"),
+                      subtitle: const Text("nota"),
                       trailing: IconButton(
                         onPressed: () {},
                         icon: Icon(Icons.delete),
                         color: Colors.red,
                       ),
-                      leading: Text("4"),
+                      leading: const Text("4"),
                     ),
                   );
                 },

@@ -1,4 +1,5 @@
 import 'package:queue_manager/features/authentication/screens/citas/mis_citas.dart';
+import 'package:queue_manager/features/authentication/screens/citas/profile_page.dart';
 import 'package:queue_manager/features/queue_app/screens/home/home.dart';
 import 'package:queue_manager/utils/constants/colors.dart';
 import 'package:queue_manager/utils/helpers/helper_functions.dart';
@@ -48,8 +49,6 @@ class NavigationController extends GetxController {
     Container(
       color: Colors.purple,
     ),
-    Container(
-      color: Colors.red,
-    ),
+    const ProfilePage(),
   ];
 }
