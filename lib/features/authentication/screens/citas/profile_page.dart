@@ -22,16 +22,22 @@ class _ProfilePageState extends State<ProfilePage> {
           children: [
             const SizedBox(height: 40),
             const CircleAvatar(
-              radius: 100,
+              backgroundColor: GColors.primaryGreen,
+              radius: 105,
+              child: CircleAvatar(
+                backgroundImage: AssetImage('assets/images/profile/Gojo.jpg'),
+                backgroundColor: GColors.primaryGreen,
+                radius: 100,
+              ),
             ),
             const SizedBox(height: 20),
             //---------------------------------------
-            itemProfile("Nombre", "Alex Salvadore", CupertinoIcons.person),
+            itemProfile("Nombre", "Alex Salvadore", Iconsax.user),
             SizedBox(height: 20),
             itemProfile(
-                "Correo Electronico", "micorreo@mail.com", CupertinoIcons.mail),
+                "Correo Electronico", "micorreo@mail.com", Iconsax.direct),
             SizedBox(height: 20),
-            itemProfile("Telefono", "809-871-3729", CupertinoIcons.phone),
+            itemProfile("Telefono", "809-871-3729", Iconsax.call),
             SizedBox(height: 20),
             itemProfile("Contraseña", "********", Iconsax.password_check)
           ],
