@@ -7,7 +7,8 @@ class GColors {
   static const Color primary = Color(0xFF4b68ff);
   static const Color secondary = Color(0xFFFFE24B);
   static const Color accent = Color(0xFFb0c7ff);
-  static const Color primaryGreen = Color.fromRGBO(61, 79, 37, 1);
+  static const Color primaryGreen = Color.fromRGBO(82, 135, 13, 1);
+  static const Color primaryGreen2 = Color.fromARGB(255, 14, 70, 16);
 
   // Text colors
   static const Color textPrimary = Color(0xFF333333);

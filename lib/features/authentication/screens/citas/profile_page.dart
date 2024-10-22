@@ -17,7 +17,7 @@ class _ProfilePageState extends State<ProfilePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: EdgeInsets.all(20),
+        padding: const EdgeInsets.all(20),
         child: Column(
           children: [
             const SizedBox(height: 40),
@@ -33,12 +33,12 @@ class _ProfilePageState extends State<ProfilePage> {
             const SizedBox(height: 20),
             //---------------------------------------
             itemProfile("Nombre", "Alex Salvadore", Iconsax.user),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             itemProfile(
                 "Correo Electronico", "micorreo@mail.com", Iconsax.direct),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             itemProfile("Telefono", "809-871-3729", Iconsax.call),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             itemProfile("Contraseña", "********", Iconsax.password_check)
           ],
         ),
@@ -61,7 +61,7 @@ itemProfile(String title, String subtitle, IconData iconData) {
       title: Text(title),
       subtitle: Text(subtitle),
       leading: Icon(iconData),
-      trailing: Icon(
+      trailing: const Icon(
         Icons.arrow_forward_ios,
         color: Colors.grey,
       ),

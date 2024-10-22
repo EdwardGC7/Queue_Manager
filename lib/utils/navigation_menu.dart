@@ -1,3 +1,4 @@
+import 'package:queue_manager/features/authentication/screens/citas/favorito.dart';
 import 'package:queue_manager/features/authentication/screens/citas/mis_citas.dart';
 import 'package:queue_manager/features/authentication/screens/citas/profile_page.dart';
 import 'package:queue_manager/features/queue_app/screens/home/home.dart';
@@ -46,9 +47,7 @@ class NavigationController extends GetxController {
   final screens = [
     const HomeScreen(),
     const MisCitas(),
-    Container(
-      color: Colors.purple,
-    ),
+    const Favorito(),
     const ProfilePage(),
   ];
 }
