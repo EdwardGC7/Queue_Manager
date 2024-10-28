@@ -1,11 +1,10 @@
-//Alex
+// Alex
 1. Pantalla de Inicio
 Botones:
 Registro: Lleva a la pantalla de registro.
 Inicio de Sesión: Lleva a la pantalla de inicio de sesión.
 
-
-//Osvaldo [completed (no database yet)]
+// Osvaldo [completed (no database yet)]
 2. Pantalla de Inicio de Sesión
 Campos:
 Nombre de usuario o correo electrónico
@@ -15,17 +14,16 @@ Iniciar Sesión: Verifica las credenciales y lleva a la pantalla principal.
 Volver: Regresa a la pantalla de inicio.
 ¿Olvidó su contraseña?: Lleva a la pantalla de recuperación de contraseña.
 
-//Osvaldo
+// Osvaldo
 3. Pantalla de Registro
 Campos:
 Nombre de usuario
 Correo electrónico
 Contraseña
-Numero de telefono
+Número de teléfono
 Botones:
 Registrarse: Completa el proceso de registro y lleva a la pantalla de inicio de sesión.
 Volver: Regresa a la pantalla de inicio.
-
 
 4. Pantalla Principal (Cliente)
 Secciones:
@@ -45,7 +43,6 @@ Reservar: Lleva a la pantalla de selección de negocio.
 Notificaciones: Accede a las notificaciones.
 Perfil: Accede a la sección de perfil.
 
-
 5. Pantalla de Selección de Negocio
 Secciones:
 Lista de Negocios: Muestra una lista de negocios con detalles básicos (nombre, categoría, distancia).
@@ -54,7 +51,6 @@ Botones:
 Ver Detalles: Lleva a la pantalla de detalles del negocio seleccionado.
 Reservar Cita/Turno: Lleva a la pantalla de selección de servicios.
 
-
 6. Pantalla de Detalles del Negocio
 Secciones:
 Información del Negocio: Nombre, dirección, contacto, horario de atención.
@@ -62,7 +58,6 @@ Servicios Ofrecidos: Lista de servicios que ofrece el negocio.
 Reseñas: Comentarios y calificaciones de otros usuarios.
 Botones:
 Reservar: Lleva a la pantalla de selección de servicios.
-
 
 7. Pantalla de Selección de Servicios
 Secciones:
@@ -73,7 +68,6 @@ Turno: Asigna el próximo espacio disponible.
 Botones:
 Continuar: Lleva a la pantalla de confirmación de reserva.
 
-
 8. Pantalla de Confirmación de Reserva
 Secciones:
 Detalles de la Reserva: Resumen del servicio, negocio, fecha y hora.
@@ -81,7 +75,6 @@ Opciones de Notificación: Configurar recordatorios.
 Botones:
 Confirmar: Confirma la reserva.
 Cancelar: Cancela la operación y regresa a la pantalla anterior.
-
 
 9. Pantalla de Perfil del Cliente
 Secciones:
@@ -92,9 +85,8 @@ Botones:
 Editar Perfil: Permite editar la información personal.
 Cerrar Sesión: Cierra la sesión del usuario.
 
-
 10. Pantalla Principal (Proveedor)
-  Secciones:
+Secciones:
 Calendario de Citas y Turnos
 Vista Semanal/Mensual: Muestra las citas y turnos programados.
 Gestionar Servicios
@@ -108,7 +100,6 @@ Cancelar Cita/Turno: Permite cancelar una cita o turno existente.
 Atender/Cancelar Turno: Permite marcar un turno como atendido o cancelado.
 Pausar Turnos/Citas: Permite pausar la toma de nuevos turnos o citas.
 
-
 11. Pantalla de Configuración de Negocio
 Secciones:
 Información Básica: Nombre, dirección, contacto.
@@ -118,3 +109,51 @@ Políticas de Cancelación: Configurar tiempos de margen para cancelaciones auto
 Botones:
 Guardar: Guarda los cambios realizados.
 Cancelar: Cancela los cambios y regresa a la pantalla principal del proveedor.
+
+---
+
+// Nuevas funcionalidades adicionales sugeridas
+
+12. Pantalla de Mensajería (Cliente y Proveedor)
+Secciones:
+Mensajes Recibidos: Lista de mensajes enviados por el cliente o el proveedor.
+Redactar Mensaje: Permite al cliente enviar un mensaje al proveedor.
+Botones:
+Enviar: Envía el mensaje al otro usuario.
+Borrar Mensaje: Elimina el mensaje seleccionado.
+Historial de Mensajes: Guarda el historial de comunicación con cada cliente/proveedor.
+
+13. Panel de Gestión de Personal (Proveedor)
+Secciones:
+Lista de Empleados: Visualización y gestión de empleados que atienden turnos (peluqueros, estilistas, etc.).
+Agregar Empleado: Permite añadir empleados a la empresa.
+Asignación de Turnos: Configurar turnos específicos para cada empleado.
+Botones:
+Añadir: Agrega un empleado nuevo.
+Editar: Modifica información del empleado.
+Eliminar: Quita un empleado de la lista.
+
+14. Pantalla de Estadísticas de Negocio (Proveedor)
+Secciones:
+Análisis de Turnos y Citas: Cantidad de citas atendidas, canceladas, y en espera.
+Gráficas de Preferencias de Servicios: Muestra los servicios más solicitados.
+Resumen de Clientes: Número de clientes recurrentes, nuevos clientes, etc.
+Botones:
+Actualizar: Refresca las estadísticas en tiempo real.
+Exportar: Exporta el análisis en formato PDF o Excel.
+
+15. Notificaciones (Cliente y Proveedor)
+Secciones:
+Notificaciones Pendientes: Lista de notificaciones de próximos turnos, mensajes, y promociones.
+Configuración de Notificaciones: Preferencias de notificaciones (SMS, Email, Push).
+Botones:
+Marcar como Leído: Cambia el estado de la notificación a leída.
+Configurar: Configura el tipo y frecuencia de notificaciones.
+
+16. Pantalla de Configuración de Aforo (Proveedor)
+Secciones:
+Aforo Máximo: Establece el máximo número de clientes en espera.
+Tiempo Estimado por Turno: Permite ajustar el tiempo estimado de atención.
+Botones:
+Guardar: Guarda los cambios de configuración de aforo.
+Cancelar: Cancela la operación y regresa a la pantalla de configuración.

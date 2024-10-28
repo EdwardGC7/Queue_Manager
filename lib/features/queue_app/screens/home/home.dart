@@ -41,7 +41,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
                   // Barra de búsqueda
                   GSearchContainer(
-                    text: 'Search in Store',
+                    text: 'Search for place',
                   ),
                   SizedBox(height: GSizes.spaceBtwSections),
 
