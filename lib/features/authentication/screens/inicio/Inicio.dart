@@ -8,7 +8,7 @@ import 'package:queue_manager/utils/constants/sizes.dart';
 import 'package:queue_manager/utils/constants/text_strings.dart';
 
 class Inicio extends StatefulWidget {
-  Inicio({Key? key}) : super(key: key);
+  Inicio({super.key});
 
   @override
   State<Inicio> createState() => _InicioState();
@@ -24,7 +24,11 @@ class _InicioState extends State<Inicio> {
             Container(
               height: 400,
               decoration: const BoxDecoration(
-                color: GColors.primaryGreen,
+                //boxShadow: Colors.black,
+                gradient: LinearGradient(
+                    colors: [GColors.primaryGreen2, GColors.primaryGreen],
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter),
                 borderRadius: BorderRadius.only(
                   bottomRight: Radius.circular(100),
                 ),

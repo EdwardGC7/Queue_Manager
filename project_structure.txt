@@ -31,11 +31,11 @@ Buscar Negocios
 Campo de Búsqueda: Buscar negocios por nombre o categoría.
 Lista de Negocios: Muestra los negocios disponibles con opciones de filtrado (por categoría, proximidad, etc.)
 
-4.1
+4.1//Alex
 Mis Citas y Turnos
 Lista de Citas/Turnos Programados: Muestra las citas y turnos programados del cliente.
 
-4.2
+4.2 Alex
 Perfil
 Detalles del Usuario: Ver y editar perfil del cliente.
 Botones:
