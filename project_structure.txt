@@ -3,6 +3,7 @@
 Botones:
 Registro: Lleva a la pantalla de registro.
 Inicio de Sesión: Lleva a la pantalla de inicio de sesión.
+// Ruta: lib/features/authentication/screens/start_screen.dart
 
 // Osvaldo [completed (no database yet)]
 2. Pantalla de Inicio de Sesión
@@ -13,6 +14,7 @@ Botones:
 Iniciar Sesión: Verifica las credenciales y lleva a la pantalla principal.
 Volver: Regresa a la pantalla de inicio.
 ¿Olvidó su contraseña?: Lleva a la pantalla de recuperación de contraseña.
+// Ruta: lib/features/authentication/screens/login/login_screen.dart
 
 // Osvaldo
 3. Pantalla de Registro
@@ -24,16 +26,19 @@ Número de teléfono
 Botones:
 Registrarse: Completa el proceso de registro y lleva a la pantalla de inicio de sesión.
 Volver: Regresa a la pantalla de inicio.
+// Ruta: lib/features/authentication/screens/signup/signup_screen.dart
 
 4. Pantalla Principal (Cliente)
 Secciones:
 Buscar Negocios
 Campo de Búsqueda: Buscar negocios por nombre o categoría.
 Lista de Negocios: Muestra los negocios disponibles con opciones de filtrado (por categoría, proximidad, etc.)
+// Ruta: lib/features/queue_app/screens/home/home_screen.dart
 
 4.1 // Alex
 Mis Citas y Turnos
 Lista de Citas/Turnos Programados: Muestra las citas y turnos programados del cliente.
+// Ruta: lib/features/queue_app/screens/appointments/my_appointments_screen.dart
 
 4.2 Alex
 Perfil
@@ -42,6 +47,7 @@ Botones:
 Reservar: Lleva a la pantalla de selección de negocio.
 Notificaciones: Accede a las notificaciones.
 Perfil: Accede a la sección de perfil.
+// Ruta: lib/features/authentication/screens/profile/profile_screen.dart
 
 5. Pantalla de Selección de Negocio
 Secciones:
@@ -50,6 +56,7 @@ Filtros de Búsqueda: Permite filtrar por categoría, distancia, etc.
 Botones:
 Ver Detalles: Lleva a la pantalla de detalles del negocio seleccionado.
 Reservar Cita/Turno: Lleva a la pantalla de selección de servicios.
+// Ruta: lib/features/queue_app/screens/business/business_selection_screen.dart
 
 6. Pantalla de Detalles del Negocio
 Secciones:
@@ -58,6 +65,7 @@ Servicios Ofrecidos: Lista de servicios que ofrece el negocio.
 Reseñas: Comentarios y calificaciones de otros usuarios.
 Botones:
 Reservar: Lleva a la pantalla de selección de servicios.
+// Ruta: lib/features/queue_app/screens/business/business_details_screen.dart
 
 7. Pantalla de Selección de Servicios
 Secciones:
@@ -67,6 +75,7 @@ Cita: Permite seleccionar una hora específica.
 Turno: Asigna el próximo espacio disponible.
 Botones:
 Continuar: Lleva a la pantalla de confirmación de reserva.
+// Ruta: lib/features/queue_app/screens/services/service_selection_screen.dart
 
 8. Pantalla de Confirmación de Reserva
 Secciones:
@@ -75,6 +84,7 @@ Opciones de Notificación: Configurar recordatorios.
 Botones:
 Confirmar: Confirma la reserva.
 Cancelar: Cancela la operación y regresa a la pantalla anterior.
+// Ruta: lib/features/queue_app/screens/reservations/reservation_confirmation_screen.dart
 
 9. Pantalla de Perfil del Cliente
 Secciones:
@@ -84,6 +94,7 @@ Configuración de Notificaciones
 Botones:
 Editar Perfil: Permite editar la información personal.
 Cerrar Sesión: Cierra la sesión del usuario.
+// Ruta: lib/features/authentication/screens/profile/client_profile_screen.dart
 
 10. Pantalla Principal (Proveedor)
 Secciones:
@@ -99,6 +110,7 @@ Agregar Cita/Turno: Permite agregar una nueva cita o turno.
 Cancelar Cita/Turno: Permite cancelar una cita o turno existente.
 Atender/Cancelar Turno: Permite marcar un turno como atendido o cancelado.
 Pausar Turnos/Citas: Permite pausar la toma de nuevos turnos o citas.
+// Ruta: lib/features/queue_app/screens/provider/provider_main_screen.dart
 
 11. Pantalla de Configuración de Negocio
 Secciones:
@@ -109,8 +121,7 @@ Políticas de Cancelación: Configurar tiempos de margen para cancelaciones auto
 Botones:
 Guardar: Guarda los cambios realizados.
 Cancelar: Cancela los cambios y regresa a la pantalla principal del proveedor.
-
-// Nuevas funcionalidades adicionales sugeridas
+// Ruta: lib/features/queue_app/screens/provider/business_settings_screen.dart
 
 12. Pantalla de Mensajería (Cliente y Proveedor)
 Secciones:
@@ -120,6 +131,7 @@ Botones:
 Enviar: Envía el mensaje al otro usuario.
 Borrar Mensaje: Elimina el mensaje seleccionado.
 Historial de Mensajes: Guarda el historial de comunicación con cada cliente/proveedor.
+// Ruta: lib/features/messaging/screens/messaging_screen.dart
 
 13. Panel de Gestión de Personal (Proveedor)
 Secciones:
@@ -130,6 +142,7 @@ Botones:
 Añadir: Agrega un empleado nuevo.
 Editar: Modifica información del empleado.
 Eliminar: Quita un empleado de la lista.
+// Ruta: lib/features/queue_app/screens/provider/staff_management_screen.dart
 
 14. Pantalla de Estadísticas de Negocio (Proveedor)
 Secciones:
@@ -139,6 +152,7 @@ Resumen de Clientes: Número de clientes recurrentes, nuevos clientes, etc.
 Botones:
 Actualizar: Refresca las estadísticas en tiempo real.
 Exportar: Exporta el análisis en formato PDF o Excel.
+// Ruta: lib/features/queue_app/screens/provider/business_statistics_screen.dart
 
 15. Notificaciones (Cliente y Proveedor)
 Secciones:
@@ -147,6 +161,7 @@ Configuración de Notificaciones: Preferencias de notificaciones (SMS, Email, Pu
 Botones:
 Marcar como Leído: Cambia el estado de la notificación a leída.
 Configurar: Configura el tipo y frecuencia de notificaciones.
+// Ruta: lib/features/notifications/screens/notifications_screen.dart
 
 16. Pantalla de Configuración de Aforo (Proveedor)
 Secciones:
@@ -155,3 +170,4 @@ Tiempo Estimado por Turno: Permite ajustar el tiempo estimado de atención.
 Botones:
 Guardar: Guarda los cambios de configuración de aforo.
 Cancelar: Cancela la operación y regresa a la pantalla de configuración.
+// Ruta: lib/features/queue_app/screens/provider/capacity_settings_screen.dart
