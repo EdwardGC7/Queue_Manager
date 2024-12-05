@@ -31,7 +31,7 @@ Buscar Negocios
 Campo de Búsqueda: Buscar negocios por nombre o categoría.
 Lista de Negocios: Muestra los negocios disponibles con opciones de filtrado (por categoría, proximidad, etc.)
 
-4.1//Alex
+4.1 // Alex
 Mis Citas y Turnos
 Lista de Citas/Turnos Programados: Muestra las citas y turnos programados del cliente.
 
@@ -109,8 +109,6 @@ Políticas de Cancelación: Configurar tiempos de margen para cancelaciones auto
 Botones:
 Guardar: Guarda los cambios realizados.
 Cancelar: Cancela los cambios y regresa a la pantalla principal del proveedor.
-
----
 
 // Nuevas funcionalidades adicionales sugeridas
 
