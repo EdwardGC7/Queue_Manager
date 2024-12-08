@@ -1,3 +1,4 @@
+import 'package:get/get.dart';
 import 'package:queue_manager/common/widgets/layouts/grid_layout.dart';
 import 'package:queue_manager/common/widgets/shapes/primary_header_container.dart';
 import 'package:queue_manager/common/widgets/shapes/search_container.dart';
@@ -6,6 +7,7 @@ import 'package:queue_manager/features/queue_app/screens/home/widgets/header_cat
 import 'package:queue_manager/features/queue_app/screens/home/widgets/home_appbar.dart';
 import 'package:queue_manager/features/queue_app/screens/home/widgets/negocio_card_vertical.dart';
 import 'package:queue_manager/features/queue_app/screens/home/widgets/promo_slider.dart';
+import 'package:queue_manager/routes/routes.dart';
 import 'package:queue_manager/utils/constants/colors.dart';
 import 'package:queue_manager/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
@@ -78,7 +80,10 @@ class _HomeScreenState extends State<HomeScreen> {
 
                   /// -- Encabezado
                   GSectionHeading(
-                      title: GTexts.sectionHeadingInicio, onPressed: () {}),
+                      title: GTexts.sectionHeadingInicio,
+                      onPressed: () {
+                        Get.toNamed(Routes.LISTANEGOCIOS);
+                      }),
                   const SizedBox(height: GSizes.spaceBtwSections),
 
                   /// Sección de Negocios
