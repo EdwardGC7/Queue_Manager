@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:queue_manager/common/styles/shadows.dart';
 import 'package:queue_manager/common/widgets/shapes/rounded_container.dart';
+import 'package:queue_manager/routes/routes.dart';
 import 'package:queue_manager/utils/constants/colors.dart';
 import 'package:queue_manager/utils/constants/sizes.dart';
 import 'package:queue_manager/utils/helpers/helper_functions.dart';
@@ -15,8 +17,26 @@ class GNegocioCardHorizontal extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = GHelperFunctions.isDarkMode(context);
 
-    return GestureDetector(
-      onTap: () {},
+    return InkWell(
+      onTap: () {
+        Get.toNamed(Routes.BUSINESS_DETAILS, arguments: {
+          'name': 'Negocio 1',
+          'category': 'Categoría',
+          'rating': 4.5,
+          'location': 'Calle Principal al afoafo oehro eoenfoefoho ohfos hfso ',
+          'services': [
+            {'name': 'Servicio 1', 'price': 100},
+            {'name': 'Servicio 2', 'price': 200},
+          ],
+          'reviews': [
+            {'user': 'Cliente 1', 'review': '¡Muy bueno!', 'rating': 5},
+          ],
+          'images': [
+            'assets/images/banners/banner_1.jpg',
+            'assets/images/banners/banner_2.jpg'
+          ],
+        });
+      },
       child: Container(
         padding: const EdgeInsets.all(1),
         decoration: BoxDecoration(

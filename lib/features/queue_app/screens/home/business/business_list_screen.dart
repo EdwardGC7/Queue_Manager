@@ -23,7 +23,7 @@ class BusinessListScreen extends StatelessWidget {
               children: [
                 Expanded(
                   child: GSearchContainer(
-                    text: 'Search for place',
+                    text: 'Search for a place',
                   ),
                 ),
                 const SizedBox(width: GSizes.spaceBtwInputFields),
