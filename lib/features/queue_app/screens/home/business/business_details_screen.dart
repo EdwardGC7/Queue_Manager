@@ -2,14 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:queue_manager/utils/constants/colors.dart';
 import 'package:queue_manager/utils/constants/sizes.dart';
-import 'package:queue_manager/utils/constants/text_strings.dart';
 
-class BusinessDetailsScreen extends StatelessWidget {
+class BusinessDetailsScreen extends StatefulWidget {
   const BusinessDetailsScreen({Key? key}) : super(key: key);
 
   @override
+  _BusinessDetailsScreenState createState() => _BusinessDetailsScreenState();
+}
+
+class _BusinessDetailsScreenState extends State<BusinessDetailsScreen> {
+  int currentImageIndex = 0;
+
+  @override
   Widget build(BuildContext context) {
-    // Simulación de datos (esto se reemplazará con datos reales o dinámicos)
+    // Datos simulados (reemplazar con datos reales o dinámicos)
     final Map<String, dynamic> businessData = Get.arguments ??
         {
           'name': 'Negocio de Prueba',
@@ -34,9 +40,12 @@ class BusinessDetailsScreen extends StatelessWidget {
           'location': '123 Calle Principal',
           'images': [
             'assets/images/banners/banner_1.jpg',
-            'assets/images/banners/banner_2.jpg'
+            'assets/images/banners/banner_2.jpg',
+            'assets/images/banners/banner_3.jpg',
           ],
         };
+
+    final images = businessData['images'];
 
     return Scaffold(
       appBar: AppBar(
@@ -47,18 +56,66 @@ class BusinessDetailsScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Carrusel de Imágenes
-            SizedBox(
-              height: 200,
-              child: PageView.builder(
-                itemCount: businessData['images'].length,
-                itemBuilder: (context, index) {
-                  return Image.asset(
-                    businessData['images'][index],
-                    fit: BoxFit.cover,
-                  );
-                },
-              ),
+            // Carrusel de imágenes con flechas
+            Stack(
+              children: [
+                // Carrusel de imágenes
+                SizedBox(
+                  height: 200,
+                  child: PageView.builder(
+                    controller: PageController(initialPage: currentImageIndex),
+                    onPageChanged: (index) {
+                      setState(() {
+                        currentImageIndex = index;
+                      });
+                    },
+                    itemCount: images.length,
+                    itemBuilder: (context, index) {
+                      return Image.asset(
+                        images[index],
+                        fit: BoxFit.cover,
+                        width: double.infinity,
+                      );
+                    },
+                  ),
+                ),
+                // Flecha izquierda dinámica
+                if (currentImageIndex > 0)
+                  Positioned(
+                    left: 10,
+                    top: 80,
+                    child: GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          currentImageIndex--;
+                        });
+                      },
+                      child: const Icon(
+                        Icons.arrow_back_ios,
+                        color: Colors.white,
+                        size: 24,
+                      ),
+                    ),
+                  ),
+                // Flecha derecha dinámica
+                if (currentImageIndex < images.length - 1)
+                  Positioned(
+                    right: 10,
+                    top: 80,
+                    child: GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          currentImageIndex++;
+                        });
+                      },
+                      child: const Icon(
+                        Icons.arrow_forward_ios,
+                        color: Colors.white,
+                        size: 24,
+                      ),
+                    ),
+                  ),
+              ],
             ),
             const SizedBox(height: GSizes.spaceBtwSections),
 
@@ -98,7 +155,7 @@ class BusinessDetailsScreen extends StatelessWidget {
                       ),
                       TextButton(
                         onPressed: () {
-                          // Navegación futura para abrir Google Maps
+                          // Lógica futura para mostrar en Google Maps
                         },
                         child: const Text('Ver en Maps'),
                       ),
@@ -150,6 +207,35 @@ class BusinessDetailsScreen extends StatelessWidget {
                       trailing: Text('${review['rating']}'),
                     );
                   }).toList(),
+                  const SizedBox(height: GSizes.spaceBtwSections),
+                  ElevatedButton.icon(
+                    onPressed: () {
+                      // Lógica para agregar un comentario
+                    },
+                    icon: const Icon(
+                      Icons.add_comment,
+                      color: Colors
+                          .white, // Icono blanco para resaltar en el fondo plateado
+                    ),
+                    label: const Text(
+                      'Agregar comentario',
+                      style: TextStyle(
+                        color: Colors.white, // Texto blanco
+                        fontWeight: FontWeight.bold, // Fuente más destacada
+                      ),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor:
+                          Colors.grey[600], // Fondo plateado oscuro
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 20, vertical: 12), // Espaciado interno
+                      shape: RoundedRectangleBorder(
+                        borderRadius:
+                            BorderRadius.circular(30), // Botón más redondeado
+                      ),
+                      elevation: 5, // Sombra para darle profundidad
+                    ),
+                  ),
                 ],
               ),
             ),
