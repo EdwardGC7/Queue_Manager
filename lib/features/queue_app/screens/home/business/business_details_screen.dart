@@ -79,40 +79,38 @@ class _BusinessDetailsScreenState extends State<BusinessDetailsScreen> {
                     },
                   ),
                 ),
-                // Flecha izquierda dinámica
+                // Flecha izquierda
                 if (currentImageIndex > 0)
                   Positioned(
                     left: 10,
                     top: 80,
-                    child: GestureDetector(
-                      onTap: () {
-                        setState(() {
-                          currentImageIndex--;
-                        });
+                    child: IconButton(
+                      icon: const Icon(Icons.arrow_back_ios),
+                      color: Colors.white,
+                      onPressed: () {
+                        if (currentImageIndex > 0) {
+                          setState(() {
+                            currentImageIndex--;
+                          });
+                        }
                       },
-                      child: const Icon(
-                        Icons.arrow_back_ios,
-                        color: Colors.white,
-                        size: 24,
-                      ),
                     ),
                   ),
-                // Flecha derecha dinámica
+                // Flecha derecha
                 if (currentImageIndex < images.length - 1)
                   Positioned(
                     right: 10,
                     top: 80,
-                    child: GestureDetector(
-                      onTap: () {
-                        setState(() {
-                          currentImageIndex++;
-                        });
+                    child: IconButton(
+                      icon: const Icon(Icons.arrow_forward_ios),
+                      color: Colors.white,
+                      onPressed: () {
+                        if (currentImageIndex < images.length - 1) {
+                          setState(() {
+                            currentImageIndex++;
+                          });
+                        }
                       },
-                      child: const Icon(
-                        Icons.arrow_forward_ios,
-                        color: Colors.white,
-                        size: 24,
-                      ),
                     ),
                   ),
               ],
@@ -157,7 +155,7 @@ class _BusinessDetailsScreenState extends State<BusinessDetailsScreen> {
                         onPressed: () {
                           // Lógica futura para mostrar en Google Maps
                         },
-                        child: const Text('Ver en Maps'),
+                        child: const Text('Ir a Maps'),
                       ),
                     ],
                   ),
