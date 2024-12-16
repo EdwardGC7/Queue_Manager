@@ -41,7 +41,7 @@ class _BusinessDetailsScreenState extends State<BusinessDetailsScreen> {
           'images': [
             'assets/images/banners/banner_1.jpg',
             'assets/images/banners/banner_2.jpg',
-            'assets/images/banners/banner_3.jpg',
+            'assets/images/banners/banner_4.jpg',
           ],
         };
 
