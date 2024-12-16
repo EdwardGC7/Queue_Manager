@@ -41,7 +41,7 @@ class _BusinessDetailsScreenState extends State<BusinessDetailsScreen> {
           'images': [
             'assets/images/banners/banner_1.jpg',
             'assets/images/banners/banner_2.jpg',
-            'assets/images/banners/banner_4.jpg',
+            'assets/images/banners/banner_3.jpg',
           ],
         };
 
@@ -84,16 +84,14 @@ class _BusinessDetailsScreenState extends State<BusinessDetailsScreen> {
                   Positioned(
                     left: 10,
                     top: 80,
-                    child: IconButton(
-                      icon: const Icon(Icons.arrow_back_ios),
-                      color: Colors.white,
-                      onPressed: () {
-                        if (currentImageIndex > 0) {
-                          setState(() {
-                            currentImageIndex--;
-                          });
-                        }
-                      },
+                    child: Container(
+                      padding: const EdgeInsets.all(8),
+                      decoration: const BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: Colors.black54,
+                      ),
+                      child: const Icon(Icons.arrow_back_ios_new,
+                          color: Colors.white),
                     ),
                   ),
                 // Flecha derecha
@@ -101,16 +99,14 @@ class _BusinessDetailsScreenState extends State<BusinessDetailsScreen> {
                   Positioned(
                     right: 10,
                     top: 80,
-                    child: IconButton(
-                      icon: const Icon(Icons.arrow_forward_ios),
-                      color: Colors.white,
-                      onPressed: () {
-                        if (currentImageIndex < images.length - 1) {
-                          setState(() {
-                            currentImageIndex++;
-                          });
-                        }
-                      },
+                    child: Container(
+                      padding: const EdgeInsets.all(8),
+                      decoration: const BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: Colors.black54,
+                      ),
+                      child: const Icon(Icons.arrow_forward_ios,
+                          color: Colors.white),
                     ),
                   ),
               ],
