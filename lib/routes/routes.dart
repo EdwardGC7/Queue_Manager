@@ -5,8 +5,8 @@ import 'package:queue_manager/features/authentication/screens/password/olvide_co
 import 'package:queue_manager/features/authentication/screens/signup/rol_selector.dart';
 import 'package:queue_manager/features/authentication/screens/signup/signup.dart';
 import 'package:queue_manager/features/authentication/screens/signup/verify_email.dart';
-import 'package:queue_manager/features/queue_app/screens/home/business/business_details_screen.dart';
-import 'package:queue_manager/features/queue_app/screens/home/business/business_list_screen.dart';
+import 'package:queue_manager/features/queue_app/screens/business/business_details_screen.dart';
+import 'package:queue_manager/features/queue_app/screens/business/business_list_screen.dart';
 
 class Routes {
   static const INICIO = '/';
